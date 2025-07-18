@@ -8,7 +8,7 @@ import (
 func main() {
 	for {
 
-		fmt.Println("hello Gooooooooooooo :)")
+		fmt.Println("hello Gooooooooooooo waste  :)")
 		time.Sleep(5 * time.Second)
 
 	}
