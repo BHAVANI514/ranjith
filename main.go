@@ -6,10 +6,13 @@ import (
 )
 
 func main() {
-	//for {
+	    router := gin.Default()
+	router.GET("/",func(c *gin.Context) {
+		c.JSON(http.StatusOK,gin.H {
+			"meassage" : "welocome to gin API!"	
+		})	
+	})
 
-		fmt.Println("hello Gooooooooooooo xius...  :)")
-		time.Sleep(5 * time.Second)
-
-	//}
+    // Start the server on port 8081
+    router.Run(":8081")
 }
