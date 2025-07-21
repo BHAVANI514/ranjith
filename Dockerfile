@@ -1,5 +1,9 @@
+# Dockerfile.server
 FROM golang:latest
+
 WORKDIR /app
-COPY . .
-RUN go build -o main main.go
-CMD ["./main"]
+COPY main.go .
+RUN go build -o server main.go
+
+EXPOSE 8081
+CMD ["./server"]
