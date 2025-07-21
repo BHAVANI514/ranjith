@@ -6,10 +6,10 @@ import (
 )
 
 func main() {
-	for {
+	//for {
 
 		fmt.Println("hello Gooooooooooooo xius...  :)")
 		time.Sleep(5 * time.Second)
 
-	}
+	//}
 }
